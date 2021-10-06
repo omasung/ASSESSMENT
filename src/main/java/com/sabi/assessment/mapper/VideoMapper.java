@@ -54,7 +54,7 @@ public class VideoMapper {
 				
 				}
 
-				videoList.add(new VideoDTO(vd.getId().toString(), vd.getTitle(), vd.getVideoType().getType().name(),
+				videoList.add(new VideoDTO(vd.getId().toString(), vd.getTitle(), vd.getVideoType().getType().getVideoType(),
 										   vd.getVideoType().getTypeRate().toString(), vd.getVideoGenre().name(),
 										   maxAge, yearRelease));
 
